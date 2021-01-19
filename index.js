@@ -58,11 +58,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a,b){
+  return a*b;
+}
 
-
+console.log(multiply(3,5))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -74,11 +74,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age*7;
 }
 
-
+console.log(dogYears(5))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -107,11 +107,24 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
-  }
+function hungryDog(dogAge,weight){
+  if(dogAge/12 > 1 && weight < 5)
+    {return weight * 0.05;}
+  else if(dogAge/12 >= 1 && weight >= 5 || weight <= 10)
+    {return weight * 0.04;}
+  else if(dogAge/12 >= 1 && weight >= 10 || weight <= 15)
+    {return weight * 0.03;}
+  else if(dogAge/12 >= 1 && weight >= 15)
+    {return weight * 0.02;}
+  else if(dogAge/12 >= 0.16 || dogAge < 0.33)
+    {return weight*0.1;}
+  else if(dogAge/12 >= 0.33 || dogAge < 0.58)
+    {return weight*0.05;}
+  else if(dogAge/12 >= 0.58 || dogAge < 1)
+    {return weight*0.04;}
+}
 
-
+console.log(hungryDog(6,10)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -135,7 +148,11 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  let 1 = 'Scissors';
+  let 0 = 'Paper';
+  let .5 = 'Rock';
+
+  if(){}
 }
   
   
@@ -147,11 +164,11 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilometers){
     /*add your code here*/
   }
 
