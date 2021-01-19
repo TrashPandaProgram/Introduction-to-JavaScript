@@ -107,24 +107,26 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(dogAge,weight){
-  if(dogAge/12 > 1 && weight < 5)
+function hungryDog(weight, age){
+  if(age >= 1 && weight <= 5)
     {return weight * 0.05;}
-  else if(dogAge/12 >= 1 && weight >= 5 || weight <= 10)
+  else if(age >= 1 && weight >= 6 && weight <= 10)
     {return weight * 0.04;}
-  else if(dogAge/12 >= 1 && weight >= 10 || weight <= 15)
+  else if(age >= 1 && weight >= 11 && weight <= 15)
     {return weight * 0.03;}
-  else if(dogAge/12 >= 1 && weight >= 15)
+  else if(age >= 1 && weight >= 15)
     {return weight * 0.02;}
-  else if(dogAge/12 >= 0.16 || dogAge < 0.33)
-    {return weight*0.1;}
-  else if(dogAge/12 >= 0.33 || dogAge < 0.58)
-    {return weight*0.05;}
-  else if(dogAge/12 >= 0.58 || dogAge < 1)
-    {return weight*0.04;}
+  else if(age >= 0.16 && age < 0.33)
+    {return weight * 0.1;}
+  else if(age >= 0.33 && age < 0.58)
+    {return weight * 0.05;}
+  else if(age >= 0.58 && age < 1)
+    {return weight * 0.04;}
+  else
+    {return 'please, try again.';}
 }
 
-console.log(hungryDog(6,10)
+console.log (hungryDog(2,8))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -147,12 +149,22 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-  let 1 = 'Scissors';
-  let 0 = 'Paper';
-  let .5 = 'Rock';
+function computerPlays(Math.random()*3){
+  if(Math.random === 0)
+    {return 'rock';}
+  else if(Math.random === 1)
+    {return 'paper';}
+  else if(Math.random === 2)
+    {return 'scissors';}
+}
 
-  if(){}
+function game(user, computer){
+  if(user === 'scissors' && computer === 'paper')
+    {return 'You win!';}
+  else if(user === 'scissors' && computer === 'rock')
+    {return 'You lose!';}
+  else if(user === 'scissors' && computer === 'scissors')
+    {return 'Its a tie!';}
 }
   
   
