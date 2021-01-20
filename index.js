@@ -64,6 +64,8 @@ function multiply(a,b){
 
 console.log(multiply(3,5))
 
+
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
@@ -75,10 +77,12 @@ Do the following:
 */
 
 function dogYears(age){
-    return age*7;
+  return age*7;
 }
 
 console.log(dogYears(5))
+
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -151,24 +155,35 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function computerPlays(Math.random()*3){
-  if(Math.random === 0)
-    {return 'rock';}
-  else if(Math.random === 1)
-    {return 'paper';}
-  else if(Math.random === 2)
-    {return 'scissors';}
-}
+let computerPlays = Math.floor(Math.random()*3);
 
-function game(user, computer){
-  if(user === 'scissors' && computer === 'paper')
-    {return 'You win!';}
-  else if(user === 'scissors' && computer === 'rock')
-    {return 'You lose!';}
-  else if(user === 'scissors' && computer === 'scissors')
-    {return 'Its a tie!';}
+  if(computerPlays === 0)
+    {computerPlays = 'rock';}
+  else if(computerPlays === 1)
+    {computerPlays = 'paper';}
+  else if(computerPlays === 2)
+    {computerPlays = 'scissors';}
+
+function game(user, computerPlays){
+  if(user === 'scissors' && computerPlays === 'paper')
+    {return 'you win!';}
+  else if(user === 'scissors' && computerPlays === 'rock')
+    {return 'you lose!';}
+  else if(user === 'scissors' && computerPlays === 'scissors')
+    {return "it's a tie";}
+  else if(user === 'paper' && computerPlays === 'paper')
+  {return "it's a tie";}
+  else if(user === 'paper' && computerPlays === 'rock')
+    {return 'you win!';}
+  else if(user === 'paper' && computerPlays === 'scissors')
+    {return 'you lose!';}
+    else if(user === 'rock' && computerPlays === 'paper')
+  {return "you lose!";}
+  else if(user === 'rock' && computerPlays === 'rock')
+    {return "it's a tie";}
+  else if(user === 'rock' && computerPlays === 'scissors')
+    {return 'you win!';}
 }
-  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -178,14 +193,14 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kilometers received to miles
+  2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
 
-function miles(kilometers){
-    return kilometers/1.609
+function miles(km){
+    return km*0.621371;
   }
-console.log(miles(4))
+
 
 
 //Task 5b - Feet to CM
@@ -197,9 +212,9 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-    return cm/30.48
+    return cm / 30.48;
   }
- console.log(feet(3))
+ 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -212,8 +227,8 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+        return number +" bottles of soda on the wall, "+ number +" bottles of soda, take one down pass it around "+ (number - 1) + " bottles of soda on the wall";
   }
 
 
@@ -232,8 +247,16 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(number){
+  if(number >= 90)
+  {return 'you got an A';}
+  else if(number >= 80)
+  {return 'you got a B';}
+  else if(number >= 70)
+  {return 'you got a C';}
+  else if(number >= 60)
+  {return 'you got a D';}
+  else {return 'you got an F';}
   }
   
   
