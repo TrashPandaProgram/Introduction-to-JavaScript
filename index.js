@@ -128,6 +128,8 @@ function hungryDog(weight, age){
 
 console.log (hungryDog(2,8))
 
+
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Rock, Paper, Scissors - Let's play against the computer!
@@ -167,7 +169,7 @@ function game(user, computer){
     {return 'Its a tie!';}
 }
   
-  
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -181,9 +183,9 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-    /*add your code here*/
+    return kilometers/1.609
   }
-
+console.log(miles(4))
 
 
 //Task 5b - Feet to CM
@@ -194,10 +196,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm/30.48
   }
- 
+ console.log(feet(3))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
